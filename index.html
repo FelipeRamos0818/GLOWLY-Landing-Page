@@ -892,6 +892,25 @@ footer {
   footer { flex-direction: column; gap: 20px; text-align: center; padding: 40px 24px; }
   .footer-links { justify-content: center; }
 }
+
+@media (max-width: 768px) {
+  .salon-grid {
+    display: block !important;
+    padding: 28px 20px !important;
+    overflow: hidden !important;
+  }
+  .salon-grid > div:first-child {
+    margin-bottom: 28px;
+  }
+  .salon-cards {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .salon-cards > div[style] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
 </style>
 </head>
 <body>
