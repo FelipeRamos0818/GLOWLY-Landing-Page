@@ -1148,7 +1148,7 @@ footer {
   </div>
 
   <!-- SALON DETAIL -->
-  <style>.salon-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}@media(max-width:900px){.salon-grid{grid-template-columns:1fr;gap:32px;padding:32px 24px!important;}.salon-btn{display:block!important;text-align:center!important;width:100%!important;}}</style>
+  <style>.salon-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}@media(max-width:768px){.salon-grid{grid-template-columns:1fr;gap:32px;padding:32px!important;}.salon-btn{display:block!important;text-align:center!important;width:100%!important;box-sizing:border-box!important;}.salon-cards{gap:12px!important;flex-direction:column!important;}}</style>
   <div class="fade-in salon-grid" style="margin-top: 60px; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 48px;">
     <div>
       <div class="section-pill">Para salões</div>
@@ -1157,7 +1157,7 @@ footer {
       <p style="font-size:15px; color:var(--muted); line-height:1.7; font-weight:300; margin-bottom: 32px;">A admin cadastra as profissionais, cada uma gerencia seus próprios serviços e horários. Você vê tudo no painel central.</p>
       <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20a%20Glowly%20para%20meu%20salão" class="btn-glow salon-btn" style="display:inline-block;" target="_blank" rel="noopener noreferrer">Quero para meu salão</a>
     </div>
-    <div style="display:flex; flex-direction:column; gap:12px;">
+    <div class="salon-cards" style="display:flex; flex-direction:column; gap:12px;">
       <div style="font-size:11px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px; padding: 0 4px;">✦ Escolha sua profissional</div>
       <div style="background:rgba(255,111,200,0.06); border:1px solid rgba(255,111,200,0.2); border-radius:16px; padding:18px 20px; display:flex; align-items:center; gap:14px; cursor:pointer; transition: all 0.2s;">
         <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6FC8,#E855A8);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">👩‍🎨</div>
@@ -1198,17 +1198,18 @@ footer {
 
   <div class="pricing-grid fade-in">
     <div class="pricing-card">
-      <div class="pricing-plan">Agenda Inteligente</div>
+      <div class="pricing-plan">Agenda Pro</div>
       <div class="pricing-price"><sub>R$</sub>149</div>
-      <div class="pricing-period">por mês · para autônomas e salões</div>
+      <div class="pricing-period">para autônomas e salões</div>
       <div class="pricing-divider"></div>
+      <p style="font-size:13px; color:var(--muted); font-style:italic; line-height:1.6; margin-bottom:24px;">"Sua agenda sempre organizada. Suas clientes nunca mais somem sem avisar."</p>
       <ul class="pricing-features">
-        <li><span class="check">✓</span> Agenda online com link personalizado</li>
+        <li><span class="check">✓</span> Página de agendamento online com link personalizado</li>
         <li><span class="check">✓</span> Confirmações automáticas via WhatsApp</li>
-        <li><span class="check">✓</span> Agendamentos ilimitados</li>
-        <li><span class="check">✓</span> Gestão de clientes</li>
-        <li><span class="check">✓</span> Bloqueio de horários</li>
-        <li><span class="check">✓</span> Visão semanal da agenda</li>
+        <li><span class="check">✓</span> Clientes agendam sozinhos, 24h por dia</li>
+        <li><span class="check">✓</span> Bloqueio de horários e folgas</li>
+        <li><span class="check">✓</span> Gestão completa de clientes</li>
+        <li><span class="check">✓</span> Visão diária e semanal da agenda</li>
         <li><span class="check">✓</span> Suporte via WhatsApp</li>
       </ul>
       <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20a%20Glowly%20por%2014%20dias" class="pricing-btn pricing-btn-outline" target="_blank" rel="noopener noreferrer">Começar grátis por 14 dias</a>
@@ -1216,17 +1217,18 @@ footer {
 
     <div class="pricing-card featured">
       <div class="pricing-popular">Mais completo</div>
-      <div class="pricing-plan">Agenda + IA Completa</div>
+      <div class="pricing-plan">Agenda Pro + Atendimento</div>
       <div class="pricing-price"><sub>R$</sub>299</div>
-      <div class="pricing-period">por mês · com atendimento automático</div>
+      <div class="pricing-period">agenda + funcionária virtual 24h</div>
       <div class="pricing-divider"></div>
+      <p style="font-size:13px; color:var(--muted); font-style:italic; line-height:1.6; margin-bottom:24px;">"Uma funcionária real custaria R$1.800/mês. A Luna não tira folga, não fica doente e atende suas clientes às 3h da manhã se precisar."</p>
       <ul class="pricing-features">
-        <li><span class="check">✓</span> Tudo do plano Agenda Inteligente</li>
-        <li><span class="check">✓</span> IA que responde clientes no WhatsApp</li>
-        <li><span class="check">✓</span> Atendimento automático 24h por dia</li>
-        <li><span class="check">✓</span> Tira dúvidas, envia link e orienta clientes</li>
-        <li><span class="check">✓</span> Avisos em massa para sua base</li>
-        <li><span class="check">✓</span> Relatórios e histórico completo</li>
+        <li><span class="check">✓</span> Tudo do plano Agenda Pro</li>
+        <li><span class="check">✓</span> Assistente humanizada no WhatsApp 24h</li>
+        <li><span class="check">✓</span> Responde dúvidas e orienta clientes automaticamente</li>
+        <li><span class="check">✓</span> Envia link de agendamento na hora certa</li>
+        <li><span class="check">✓</span> Lida com cancelamentos e reagendamentos</li>
+        <li><span class="check">✓</span> Avisos em massa para sua base de clientes</li>
         <li><span class="check">✓</span> Suporte prioritário</li>
       </ul>
       <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20o%20plano%20completo%20da%20Glowly" class="pricing-btn pricing-btn-filled" target="_blank" rel="noopener noreferrer">Começar grátis por 14 dias</a>
