@@ -1201,14 +1201,38 @@ footer {
       padding: 4px 10px;
       white-space: nowrap;
     }
+    .salon-cards-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .salon-pro-price {
+      font-size: 11px;
+      color: var(--pink);
+      font-weight: 500;
+      margin-top: 2px;
+    }
     @media (max-width: 768px) {
       .salon-block {
         grid-template-columns: 1fr;
         gap: 32px;
-        padding: 28px 20px;
+        padding: 24px 16px;
+        overflow: hidden;
       }
       .salon-btn-wrap {
         display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .salon-pro-card {
+        padding: 14px 12px;
+      }
+      .salon-cards-wrap {
+        overflow: hidden;
         width: 100%;
       }
     }
@@ -1221,13 +1245,13 @@ footer {
       <p style="font-size:15px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:32px;">A admin cadastra as profissionais, cada uma gerencia seus próprios serviços e horários. Você vê tudo no painel central.</p>
       <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20a%20Glowly%20para%20meu%20salão" target="_blank" class="btn-glow salon-btn-wrap">Quero para meu salão</a>
     </div>
-    <div style="display:flex;flex-direction:column;gap:12px;">
+    <div class="salon-cards-wrap">
       <div style="font-size:11px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">✦ Escolha sua profissional</div>
       <div class="salon-pro-card" style="background:rgba(255,111,200,0.06);border:1px solid rgba(255,111,200,0.2);">
         <div class="salon-pro-avatar" style="background:linear-gradient(135deg,#FF6FC8,#E855A8);">👩‍🎨</div>
         <div class="salon-pro-info">
           <div class="salon-pro-name">Maria</div>
-          <div class="salon-pro-desc">Manicure & Pedicure · a partir de R$45</div>
+          <div class="salon-pro-desc">Manicure & Pedicure</div><div class="salon-pro-price">a partir de R$45</div>
         </div>
         <div class="salon-pro-badge" style="color:#4ADE80;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.2);">disponível</div>
       </div>
@@ -1235,7 +1259,7 @@ footer {
         <div class="salon-pro-avatar" style="background:linear-gradient(135deg,#A855F7,#7C3AED);">✂️</div>
         <div class="salon-pro-info">
           <div class="salon-pro-name">Joice</div>
-          <div class="salon-pro-desc">Cabeleireira · a partir de R$80</div>
+          <div class="salon-pro-desc">Cabeleireira</div><div class="salon-pro-price">a partir de R$80</div>
         </div>
         <div class="salon-pro-badge" style="color:#4ADE80;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.2);">disponível</div>
       </div>
@@ -1243,7 +1267,7 @@ footer {
         <div class="salon-pro-avatar" style="background:linear-gradient(135deg,#22D4E8,#0891B2);">🌟</div>
         <div class="salon-pro-info">
           <div class="salon-pro-name">Fernanda</div>
-          <div class="salon-pro-desc">Design de Sobrancelha · a partir de R$60</div>
+          <div class="salon-pro-desc">Design de Sobrancelha</div><div class="salon-pro-price">a partir de R$60</div>
         </div>
         <div class="salon-pro-badge" style="color:rgba(255,200,100,0.9);background:rgba(255,200,100,0.08);border:1px solid rgba(255,200,100,0.2);">próx. às 15h</div>
       </div>
