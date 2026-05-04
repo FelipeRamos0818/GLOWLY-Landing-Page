@@ -874,6 +874,39 @@ footer {
 }
 .fade-in.visible { opacity:1; transform:translateY(0); }
 
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,111,200,0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 64px;
+}
+.timer-block span {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #FF6FC8, #A855F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.timer-block label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.timer-sep {
+  font-size: 24px;
+  color: rgba(255,111,200,0.5);
+  align-self: center;
+  padding-bottom: 16px;
+}
+
 @media (max-width: 900px) {
   .hero-cards { gap: 12px; flex-direction: column; align-items: center; }
   .hero-card { width: 100%; max-width: 320px; }
@@ -891,6 +924,7 @@ footer {
   .cta-section { padding: 80px 24px; }
   footer { flex-direction: column; gap: 20px; text-align: center; padding: 40px 24px; }
   .footer-links { justify-content: center; }
+  .testimonials-grid { grid-template-columns: 1fr !important; }
 }
 </style>
 </head>
@@ -913,10 +947,10 @@ footer {
   <div class="hero-glow"></div>
   <div class="hero-inner">
     <div class="hero-badge">Para profissionais de beleza que valorizam seu tempo</div>
-    <h1>Pare de perder horas<br><span class="gradient-text">confirmando horário.</span></h1>
-    <p>Sua assistente cuida das confirmações, responde clientes e preenche sua agenda — enquanto você foca no que realmente gera dinheiro.</p>
+    <h1>Sua agenda cheia.<br><span class="gradient-text">Sua cabeça livre.</span></h1>
+    <p>Enquanto você atende, sua assistente virtual confirma, lembra e agenda — sem você digitar uma mensagem sequer.</p>
     <div class="hero-buttons">
-      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20a%20Glowly%20por%2014%20dias" target="_blank" class="btn-glow">Testar 14 dias grátis</a>
+      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20a%20Glowly%20por%2014%20dias" target="_blank" class="btn-glow">Testar 14 dias grátis — sem cartão</a>
       <a href="#como-funciona" class="btn-ghost">Ver como funciona</a>
     </div>
 
@@ -1312,6 +1346,38 @@ footer {
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="section" style="padding-top:80px;padding-bottom:80px;">
+  <div class="fade-in" style="text-align:center;margin-bottom:48px;">
+    <div class="section-pill" style="margin:0 auto 20px;">Depoimentos</div>
+    <h2 class="section-title">O que dizem as <span class="g">primeiras usuárias</span></h2>
+  </div>
+  <div class="testimonials-grid fade-in" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto 40px;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;">
+      <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6FC8,#A855F7);display:flex;align-items:center;justify-content:center;font-size:22px;color:white;font-weight:500;">?</div>
+      <div style="color:#B8956A;font-size:16px;letter-spacing:2px;">★★★★★</div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7;font-style:italic;font-weight:300;">"Depoimento real em breve..."</p>
+      <div style="font-size:13px;color:rgba(255,255,255,0.5);">— Beta tester, RS</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;">
+      <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6FC8,#A855F7);display:flex;align-items:center;justify-content:center;font-size:22px;color:white;font-weight:500;">?</div>
+      <div style="color:#B8956A;font-size:16px;letter-spacing:2px;">★★★★★</div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7;font-style:italic;font-weight:300;">"Depoimento real em breve..."</p>
+      <div style="font-size:13px;color:rgba(255,255,255,0.5);">— Beta tester, RS</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;">
+      <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6FC8,#A855F7);display:flex;align-items:center;justify-content:center;font-size:22px;color:white;font-weight:500;">?</div>
+      <div style="color:#B8956A;font-size:16px;letter-spacing:2px;">★★★★★</div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7;font-style:italic;font-weight:300;">"Depoimento real em breve..."</p>
+      <div style="font-size:13px;color:rgba(255,255,255,0.5);">— Beta tester, RS</div>
+    </div>
+  </div>
+  <div class="fade-in" style="text-align:center;">
+    <p style="font-size:15px;color:var(--muted);margin-bottom:24px;">Seja uma das primeiras a testar e ganhe acesso antecipado.</p>
+    <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20ser%20beta%20tester%20da%20Glowly" target="_blank" class="btn-ghost">Quero ser beta tester ✨</a>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section class="pricing-section" id="precos">
   <div class="fade-in">
@@ -1320,10 +1386,38 @@ footer {
     <p class="section-sub">Sem taxa de setup, sem contrato. Cancela quando quiser.</p>
   </div>
 
+  <div class="fade-in" style="max-width:800px;margin:0 auto;">
+    <div style="background:linear-gradient(135deg,#E855A8,#A855F7);border-radius:16px;padding:16px 24px;text-align:center;margin-bottom:24px;">
+      <span style="font-size:14px;color:white;font-weight:500;">🔥 Oferta de Fundadoras — Primeiras 10 clientes</span>
+    </div>
+
+    <div id="offer-timer" style="text-align:center;margin-bottom:24px;">
+      <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:8px;letter-spacing:0.08em;text-transform:uppercase;">Oferta expira em</div>
+      <div style="display:flex;justify-content:center;gap:12px;">
+        <div class="timer-block">
+          <span id="timer-h">00</span>
+          <label>horas</label>
+        </div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block">
+          <span id="timer-m">00</span>
+          <label>min</label>
+        </div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block">
+          <span id="timer-s">00</span>
+          <label>seg</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="pricing-grid fade-in">
     <div class="pricing-card">
       <div class="pricing-plan">Agenda Inteligente</div>
-      <div class="pricing-price"><sub>R$</sub>149</div>
+      <div style="font-size:16px;text-decoration:line-through;opacity:0.5;margin-bottom:4px;">R$149</div>
+      <div class="pricing-price" style="background:linear-gradient(135deg,#FF6FC8,#A855F7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;"><sub>R$</sub>99,90</div>
+      <div style="font-size:12px;color:#FF6FC8;margin-bottom:8px;">🔥 Restam 8 de 10 vagas</div>
       <div class="pricing-period">por mês · para autônomas e salões</div>
       <div class="pricing-divider"></div>
       <ul class="pricing-features">
@@ -1335,13 +1429,15 @@ footer {
         <li><span class="check">✓</span> Visão semanal da agenda</li>
         <li><span class="check">✓</span> Suporte via WhatsApp</li>
       </ul>
-      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20a%20Glowly%20por%2014%20dias" target="_blank" class="pricing-btn pricing-btn-outline">Começar grátis por 14 dias</a>
+      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20a%20Glowly%20por%2014%20dias" target="_blank" class="pricing-btn pricing-btn-outline">Testar 14 dias grátis — sem cartão</a>
     </div>
 
     <div class="pricing-card featured">
       <div class="pricing-popular">Mais completo</div>
       <div class="pricing-plan">Agenda + IA Completa</div>
-      <div class="pricing-price"><sub>R$</sub>299</div>
+      <div style="font-size:16px;text-decoration:line-through;opacity:0.5;margin-bottom:4px;">R$299</div>
+      <div class="pricing-price" style="background:linear-gradient(135deg,#FF6FC8,#A855F7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;"><sub>R$</sub>199,90</div>
+      <div style="font-size:12px;color:#FF6FC8;margin-bottom:8px;">🔥 Restam 10 de 10 vagas</div>
       <div class="pricing-period">por mês · com atendimento automático</div>
       <div class="pricing-divider"></div>
       <ul class="pricing-features">
@@ -1353,7 +1449,7 @@ footer {
         <li><span class="check">✓</span> Relatórios e histórico completo</li>
         <li><span class="check">✓</span> Suporte prioritário</li>
       </ul>
-      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20o%20plano%20completo%20da%20Glowly" target="_blank" class="pricing-btn pricing-btn-filled">Começar grátis por 14 dias</a>
+      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20testar%20o%20plano%20completo%20da%20Glowly" target="_blank" class="pricing-btn pricing-btn-filled">Testar 14 dias grátis — sem cartão</a>
     </div>
   </div>
 </section>
@@ -1366,7 +1462,7 @@ footer {
     <h2 class="section-title">Sua agenda mais cheia<br><span class="g">começa agora</span></h2>
     <p class="section-sub">14 dias grátis, sem cartão de crédito. Configure em menos de uma hora.</p>
     <div class="cta-buttons">
-      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20criar%20minha%20conta%20na%20Glowly" target="_blank" class="btn-glow">Criar minha conta grátis</a>
+      <a href="https://wa.me/5551997270936?text=Olá!%20Quero%20criar%20minha%20conta%20na%20Glowly" target="_blank" class="btn-glow">Testar 14 dias grátis — sem cartão</a>
       <a href="https://wa.me/5551997270936?text=Olá!%20Tenho%20dúvidas%20sobre%20a%20Glowly" target="_blank" class="btn-ghost">Falar com a equipe</a>
     </div>
     <p class="trial-note">Sem cartão de crédito · Cancela quando quiser · Suporte via WhatsApp</p>
@@ -1389,6 +1485,41 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.08 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'glowly_offer_deadline';
+  const DURATION_MS = 48 * 60 * 60 * 1000;
+
+  let deadline = localStorage.getItem(STORAGE_KEY);
+  if (!deadline) {
+    deadline = Date.now() + DURATION_MS;
+    localStorage.setItem(STORAGE_KEY, deadline);
+  }
+  deadline = parseInt(deadline);
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function update() {
+    const remaining = deadline - Date.now();
+    if (remaining <= 0) {
+      document.getElementById('timer-h').textContent = '00';
+      document.getElementById('timer-m').textContent = '00';
+      document.getElementById('timer-s').textContent = '00';
+      return;
+    }
+    const h = Math.floor(remaining / 3600000);
+    const m = Math.floor((remaining % 3600000) / 60000);
+    const s = Math.floor((remaining % 60000) / 1000);
+    document.getElementById('timer-h').textContent = pad(h);
+    document.getElementById('timer-m').textContent = pad(m);
+    document.getElementById('timer-s').textContent = pad(s);
+  }
+
+  update();
+  setInterval(update, 1000);
+})();
 </script>
 </body>
 </html>
